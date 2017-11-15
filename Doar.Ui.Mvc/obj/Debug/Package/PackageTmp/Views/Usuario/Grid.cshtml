@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Doar.Entity.Entities.Usuario>
+@{
+    var grid = new WebGrid(Model, canPage: true, rowsPerPage: 5, ajaxUpdateContainerId: "divGrid");
+}
+@grid.GetHtml(tableStyle: "table table-hover",
+    columns: grid.Columns(
+    grid.Column("UsuarioId", "Id"),
+    grid.Column("Nome", " Nome"),
+    grid.Column("Email", "Email"),
+    grid.Column("Cpf", "CPF"),
+    grid.Column("Nascimento", "Nascimento", x => x.Nascimento.ToString("dd/MM/yyyy")),
+        grid.Column(format: (item) =>
+        {
+            var btnEditar = "<a data-toggle='tooltip' title='Editar'href='../Usuario/Edit/" + item.UsuarioId + "'><i class='glyphicon glyphicon-edit glyphicon-lg' aria-hidden='true'></i></a>";
+            var btnExcluir = "<a data-toggle='tooltip' title='Excluir'href='../Usuario/Delete/" + item.UsuarioId + "'><i class='glyphicon glyphicon-trash glyphicon-lg' aria-hidden='true'></i></a>";
+
+            return @Html.Raw(btnEditar +" "+ btnExcluir);
+        })
+    )) 

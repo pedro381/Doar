@@ -1,0 +1,17 @@
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\Doar.Entity.dll.config
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\Doar.Entity.dll
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\Doar.Entity.pdb
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\Boleto.Net.dll
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\NReco.PdfGenerator.dll
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\Boleto.Net.pdb
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\bin\Debug\NReco.PdfGenerator.xml
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\obj\Debug\Doar.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\obj\Debug\Doar.Entity.dll
+C:\Users\Pedro\Desktop\DoarTFS\DOAR\Doar.Entities\obj\Debug\Doar.Entity.pdb
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\bin\Debug\Doar.Entity.dll.config
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\bin\Debug\Doar.Entity.dll
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\bin\Debug\Doar.Entity.pdb
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.dll
+C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.pdb

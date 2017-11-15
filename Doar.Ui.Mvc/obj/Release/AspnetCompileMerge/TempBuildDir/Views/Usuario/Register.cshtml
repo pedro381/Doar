@@ -1,0 +1,130 @@
+﻿@model Doar.Entity.Entities.Usuario
+@{
+    ViewBag.Title = "Cadastre-se";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using(Ajax.BeginForm("Register", "Usuario", new AjaxOptions { HttpMethod = "POST", OnSuccess = "MensagemSucesso();" })) {
+    @Html.AntiForgeryToken()
+
+    <div class="col-md-12 center panel">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.EmailConfirmacao)
+                    @Html.TextBoxFor(m => m.EmailConfirmacao, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.EmailConfirmacao, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Senha)
+                    @Html.PasswordFor(m => m.Senha, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Senha, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SenhaConfirmacao)
+                    @Html.PasswordFor(m => m.SenhaConfirmacao, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.SenhaConfirmacao, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Nome)
+                    @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Cpf)
+                    @Html.TextBoxFor(m => m.Cpf, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cpf, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Nascimento)
+                    @Html.TextBoxFor(m => m.Nascimento, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Nascimento, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Telefone)
+                    @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Telefone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.HiddenFor(m => m.IsAdmin)
+                    <label class="btn btn-primary active">
+                        @Html.CheckBoxFor(m => m.ReceberEmail)
+                        @Html.LabelFor(m => m.ReceberEmail)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @Html.HiddenFor(m => m.EnderecoId)
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.End)
+                    @Html.TextBoxFor(m => m.Endereco.End, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.End, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.Numero)
+                    @Html.TextBoxFor(m => m.Endereco.Numero, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.Numero, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.Complemento)
+                    @Html.TextBoxFor(m => m.Endereco.Complemento, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.Complemento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.Bairro)
+                    @Html.TextBoxFor(m => m.Endereco.Bairro, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.Bairro, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.Cidade)
+                    @Html.TextBoxFor(m => m.Endereco.Cidade, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.Cidade, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.UF)
+                    @Html.TextBoxFor(m => m.Endereco.UF, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.UF, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Endereco.CEP)
+                    @Html.TextBoxFor(m => m.Endereco.CEP, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Endereco.CEP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Cadastrar" />
+                </div>
+                @Html.ActionLink("Já possui uma conta?", "Login")
+            </div>
+        </div>
+    </div>
+}

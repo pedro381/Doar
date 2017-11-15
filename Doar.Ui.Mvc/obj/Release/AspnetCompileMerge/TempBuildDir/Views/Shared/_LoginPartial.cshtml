@@ -1,0 +1,23 @@
+﻿@using Doar.Session
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Usuario", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Olá "+ UsuarioSession.Usuario.Nome + "!", "Index", "Usuario", routeValues: null, htmlAttributes: new { title = "Usuario" })
+        </li>
+        <li><button type="submit">Sair</button></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Cadastre-se", "Register", "Usuario", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Entrar", "Login", "Usuario", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

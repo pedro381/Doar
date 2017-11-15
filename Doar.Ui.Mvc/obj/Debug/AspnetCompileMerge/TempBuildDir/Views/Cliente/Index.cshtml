@@ -1,0 +1,56 @@
+﻿@model Doar.Entity.Entities.Cliente
+@{
+    ViewBag.Title = "Cadastro de Cliente";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Ajax.BeginForm("Edit", "Cliente", new AjaxOptions { HttpMethod = "POST", OnSuccess = "MensagemSucesso();" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.ClienteId)
+    <div class="col-md-12 center panel">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Nome)
+                    @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Cnpj)
+                    @Html.TextBoxFor(m => m.Cnpj, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Cnpj, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Agencia)
+                    @Html.TextBoxFor(m => m.Agencia,  new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Agencia, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Conta)
+                    @Html.TextBoxFor(m => m.Conta, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Conta, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Carteira)
+                    @Html.TextBoxFor(m => m.Carteira, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Carteira, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.NossoNumero)
+                    @Html.TextBoxFor(m => m.NossoNumero, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.NossoNumero, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Atualizar" />
+                </div>
+            </div>
+        </div>
+    </div>
+}

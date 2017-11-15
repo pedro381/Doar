@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Doar" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Pedro\\Desktop\\DoarTFS\\DOAR\\Doar\.Ui\.Mvc\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Pedro\\Desktop\\DoarTFS\\DOAR\\Doar\.Ui\.Mvc\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DoarDb-Web.config Connection String" description="DoarDb A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." value="Server=mssql6.gear.host;Initial Catalog=doar;Persist Security Info=False;User ID=doar;Password=do@ar381;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Pedro\\Desktop\\DoarTFS\\DOAR\\Doar\.Ui\.Mvc\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DoarDb']/@connectionString" />
+  </parameter>
+</parameters>
