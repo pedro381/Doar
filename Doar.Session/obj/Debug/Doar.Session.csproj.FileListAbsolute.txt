@@ -18,3 +18,10 @@ C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Session\obj\Debug\Doar.Session.csprojResol
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Session\obj\Debug\Doar.Session.csproj.CoreCompileInputs.cache
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Session\obj\Debug\Doar.Session.dll
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Session\obj\Debug\Doar.Session.pdb
+C:\DoarGit\Doar.Session\bin\Debug\Doar.Session.dll
+C:\DoarGit\Doar.Session\bin\Debug\Doar.Session.pdb
+C:\DoarGit\Doar.Session\bin\Debug\Doar.Entity.dll
+C:\DoarGit\Doar.Session\bin\Debug\Doar.Entity.pdb
+C:\DoarGit\Doar.Session\obj\Debug\Doar.Session.csprojResolveAssemblyReference.cache
+C:\DoarGit\Doar.Session\obj\Debug\Doar.Session.dll
+C:\DoarGit\Doar.Session\obj\Debug\Doar.Session.pdb

@@ -15,3 +15,8 @@ C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.csprojResol
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.csproj.CoreCompileInputs.cache
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.dll
 C:\Users\Pedro\Desktop\Doar\DOAR\Doar.Entities\obj\Debug\Doar.Entity.pdb
+C:\DoarGit\Doar.Entities\bin\Debug\Doar.Entity.dll.config
+C:\DoarGit\Doar.Entities\bin\Debug\Doar.Entity.dll
+C:\DoarGit\Doar.Entities\bin\Debug\Doar.Entity.pdb
+C:\DoarGit\Doar.Entities\obj\Debug\Doar.Entity.dll
+C:\DoarGit\Doar.Entities\obj\Debug\Doar.Entity.pdb

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DoarDb-Web.config Connection String" description="DoarDb A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Server=tcp:doar.database.windows.net,1433;Initial Catalog=Doar;Persist Security Info=False;User ID=doar;Password=Pedro381;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Pedro\\Desktop\\Doar\\DOAR\\Doar\.Ui\.Mvc\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DoarDb']/@connectionString" />
-  </parameter>
-</parameters>
